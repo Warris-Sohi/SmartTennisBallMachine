@@ -18,7 +18,7 @@ I have already acquired Model R360 DC motors
 
 
 I have ordered the Sparkfun Dual Motor Driver
-![Proof Purchase Motor Driver](Documentation/Proof of Purchase -Motor Driver .JPG)
+![Proof Purchase Motor Driver](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Documentation/Proof%20of%20Purchase%20-Motor%20Driver%20.JPG)
 
 ### September 26, 2019
 Today I completed my [Budget](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Documentation/Project%20Budget.pdf) 
