@@ -10,7 +10,7 @@ Gurwarris's Team.
 ### September 26, 2019
 Proof of Purcahse
 My Raspberry Pi 4 Model B is Arriving Today.
-![Proof Purchase Raspberry Pi](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Documentation/Proof%20of%20Purchase%20-Raspberry%20Pi%20.JPG)
+![Proof Purchase Raspberry Pi](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Documentation/Proof%20of%20Purchase%20-Raspberry%20Pi%20.JPG)
 ![Proof Purchase Raspberry Pi](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Documentation/Proof%20of%20Purchase%20-Raspberry%20Pi%202.JPG)
 
 I have already acquired Model R360 DC motors
