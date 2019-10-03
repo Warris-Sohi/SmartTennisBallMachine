@@ -10,11 +10,11 @@ Gurwarris's Team.
 ### September 26, 2019
 Proof of Purcahse
 My Raspberry Pi 4 Model B is Arriving Today.
-![Proof Purchase Raspberry Pi](Documentation/Proof of Purchase -Raspberry Pi .JPG)
+![Proof Purchase Raspberry Pi](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Documentation/Proof%20of%20Purchase%20-Raspberry%20Pi%20.JPG)
 
 
 I have already acquired Model R360 DC motors
-![Proof Purchase DC motors](Documentation/Proof of Purchase -DC motors .JPG)
+![Proof Purchase DC motors](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Documentation/Proof%20of%20Purchase%20-DC%20motors%20.JPG)
 
 
 I have ordered the Sparkfun Dual Motor Driver
