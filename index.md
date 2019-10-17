@@ -11,7 +11,7 @@ Gurwarris's Team.
 #### Fritzing File
 This is the link to my [Fritzing File](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Electronics/DualMotorDriver.fzz)
 #### My Breadboard Design
-![Breadboard Design](https://raw.githubusercontent.com/Warris-Sohi/SmartTennisBallMachine/master/Electronics/DualMotorDriver_bb.jpg)
+![Breadboard Design](https://raw.githubusercontent.com/Warris-Sohi/SmartTennisBallMachine/master/Electronics/DualMotorDriver_bb%20.jpg)
 #### My Circuit Schematics
 ![Circuit Schematics](https://raw.githubusercontent.com/Warris-Sohi/SmartTennisBallMachine/master/Electronics/DualMotorDriver_schem.jpg)
 #### My PCB design
