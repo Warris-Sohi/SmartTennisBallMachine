@@ -8,12 +8,13 @@ title: Smart Tennis Ball Machine
 Gurwarris's Team.
 -------------
 ### October 10, 2019
+#### Fritzing File
 This is the link to my [Fritzing File](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Electronics/DualMotorDriver.fzz)
-My Breadboard Design
+#### My Breadboard Design
 ![Breadboard Design](https://raw.githubusercontent.com/Warris-Sohi/SmartTennisBallMachine/master/Electronics/DualMotorDriver_bb.jpg)
-My Circuit Schematics
+#### My Circuit Schematics
 ![Circuit Schematics](https://raw.githubusercontent.com/Warris-Sohi/SmartTennisBallMachine/master/Electronics/DualMotorDriver_schem.jpg)
-My PCB design
+#### My PCB design
 ![PCB Design](https://raw.githubusercontent.com/Warris-Sohi/SmartTennisBallMachine/master/Electronics/DualMotorDriver_pcb.jpg)
 
 
@@ -25,19 +26,14 @@ My motors driver has arrived.
 
 ### September 26, 2019
 Proof of Purcahse
-My Raspberry Pi 4 Model B is Arriving Today.
+#### My Raspberry Pi 4 Model B is Arriving Today.
 ![Proof Purchase Raspberry Pi](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Documentation/Proof%20of%20Purchase%20-Raspberry%20Pi%20.JPG)
 ![Proof Purchase Raspberry Pi](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Documentation/Proof%20of%20Purchase%20-Raspberry%20Pi%202.JPG)
 
-I have already acquired Model R360 DC motors
-
-
-
-
+#### I have already acquired Model R360 DC motors
 ![Proof Purchase DC motors](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Documentation/Proof%20of%20Purchase%20-DC%20motors%20.JPG)
 
-
-I have ordered the Sparkfun Dual Motor Driver
+#### I have ordered the Sparkfun Dual Motor Driver
 ![Proof Purchase Motor Driver](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Documentation/Proof%20of%20Purchase%20-Motor%20Driver%20.JPG)
 
 ### September 26, 2019
