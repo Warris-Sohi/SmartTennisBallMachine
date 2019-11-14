@@ -7,8 +7,16 @@ title: Smart Tennis Ball Machine
 
 Gurwarris's Team.
 -------------
+
+
 ### November 14, 2019
- My Raspberry pi 4 got short circuited today by my own mistake, I have a lifetime warranty for it. So it will be replaced. Meanwhile I am borrowing my friend's raspberry pi 3 to test my breadboarded circuit and it works.
+I realised I was using a wrong port in my pcb. I was supposed to use pin 35, instead I used pin 37. So I created a new PCB design with correct ports.
+My Firmware code runs through the 3 different shots I purposed. Straight, backhand and fronthand using the firmware code update below.
+
+#### My PCB design
+![PCB Design](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Electronics/DualMotorDriver_pcb_v2.jpg)
+
+My Raspberry pi 4 got short circuited today by my own mistake, I have a lifetime warranty for it. So it will be replaced. Meanwhile I am borrowing my friend's raspberry pi 3 to test my breadboarded circuit and it works.
  
  The [code](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Firmware/tbfng6621.py) with 3 different modes.
  1. Both motors runnning at same speed 
@@ -22,7 +30,7 @@ Gurwarris's Team.
 #### Fritzing File
 This is the link to my [Fritzing File](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Electronics/DualMotorDriver.fzz)
 #### My Breadboard Design
-![Breadboard Design](https://raw.githubusercontent.com/Warris-Sohi/SmartTennisBallMachine/master/Electronics/DualMotorDriver_bb%20.jpg)
+![Breadboard Design](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Electronics/DualMotorDriver_bb_v2.jpg)
 #### My Circuit Schematics
 ![Circuit Schematics](https://raw.githubusercontent.com/Warris-Sohi/SmartTennisBallMachine/master/Electronics/DualMotorDriver_schem.jpg)
 #### My PCB design
