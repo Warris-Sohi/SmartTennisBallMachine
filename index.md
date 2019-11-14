@@ -7,6 +7,17 @@ title: Smart Tennis Ball Machine
 
 Gurwarris's Team.
 -------------
+### November 14, 2019
+ My Raspberry pi 4 got short circuited today by my own mistake, I have a lifetime warranty for it. So it will be replaced. Meanwhile I am borrowing my friend's raspberry pi 3 to test my breadboarded circuit and it works.
+ 
+ The [code](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Firmware/tbfng6621.py) with 3 different modes.
+ 1. Both motors runnning at same speed 
+ 2. Motor B running at almost half the original speed
+ 3. Motor A running at almost half the original speed
+ 
+ 
+ ![Circuit working](https://raw.githubusercontent.com/Warris-Sohi/SmartTennisBallMachine/master/Images/IMG_20191114_130010.jpg)
+
 ### October 10, 2019
 #### Fritzing File
 This is the link to my [Fritzing File](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Electronics/DualMotorDriver.fzz)
