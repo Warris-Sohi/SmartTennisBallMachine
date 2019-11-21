@@ -8,9 +8,8 @@ title: Smart Tennis Ball Machine
 Gurwarris's Team.
 -------------
 ### November 21, 2019
-The laser cut design for my enclosure is in 2 .cdr files
-[File1](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Mechanical/enclosure%201.cdr)
-[File2](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Mechanical/enclosure%202.cdr)
+The laser cut design for my enclosure is in .cdr files
+[File](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Mechanical/enclosure%20new.cdr)
 
 ### November 21,2019
 [3-d Print Enclosure base .stl file](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Mechanical/Pi%20Enclosure%20Base.stl)
