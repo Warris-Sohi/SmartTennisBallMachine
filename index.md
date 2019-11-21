@@ -17,7 +17,7 @@ My Firmware code runs through the 3 different shots I purposed. Straight, backha
 
 #### My PCB design
 ![PCB Design](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Electronics/DualMotorDriver_pcb_v2.jpg)
- #### My Breadboard Design
+#### My Breadboard Design
 ![Breadboard Design](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Electronics/DualMotorDriver_bb_v2.jpg)
 My Raspberry pi 4 got short circuited today by my own mistake, I have a lifetime warranty for it. So it will be replaced. Meanwhile I am borrowing my friend's raspberry pi 3 to test my breadboarded circuit and it works.
  
