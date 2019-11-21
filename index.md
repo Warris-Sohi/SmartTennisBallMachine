@@ -11,6 +11,10 @@ Gurwarris's Team.
 The laser cut design for my enclosure is in 2 .cdr files
 [File1](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Mechanical/enclosure%201.cdr)
 [File2](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Mechanical/enclosure%202.cdr)
+
+### November 21,2019
+[3-d Print Enclosure base .stl file](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Mechanical/Pi%20Enclosure%20Base.stl)
+[3-d Print Enclosure lid .stl file](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Mechanical/Pi%20Enclosure%20Lid.stl)
 ### November 14, 2019
 I realised I was using a wrong port in my pcb. I was supposed to use pin 35, instead I used pin 37. So I created a new PCB design with correct ports.
 My Firmware code runs through the 3 different shots I purposed. Straight, backhand and fronthand using the firmware code update below.
