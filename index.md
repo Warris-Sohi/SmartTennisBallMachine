@@ -7,6 +7,11 @@ title: Smart Tennis Ball Machine
 
 Gurwarris's Team.
 -------------
+
+## November 28, 2019
+[My presentation](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Documentation/Presentation%20Ping%20Pong%20Machine.pptx)
+I have tried laser cutting my enclosure, but it is not upto scale, with my design.
+
 ### November 21, 2019
 The laser cut design for my enclosure is in .cdr files
 [File](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Mechanical/enclosure%20new.cdr)
