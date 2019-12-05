@@ -28,5 +28,5 @@ warris-sohi.github.io/SmartTennisBallMachine
 ##### Then test the connections in the PCB, that they are not broken, or are not connected to wrong pins.
 ##### Then mount the driver on the PCB and the PCB onto the pi 
 ### Step 4 Project Enclosure
-#### The provided .cdr file consists of a case for the Raspberry Pi and mounted PCB and a holder for the DC motors to hold them at required distance so that a ping pong ball can be fit in them and launched. 
-#### After enclosure pieces are laser-cut, some of affixes for the Pi case and the DC motors need to shaved off, so that the we can attach them firmly, without needing glue and remove them after, if needed.
+##### The provided .cdr file consists of a case for the Raspberry Pi and mounted PCB and a holder for the DC motors to hold them at required distance so that a ping pong ball can be fit in them and launched. 
+##### After enclosure pieces are laser-cut, some of affixes for the Pi case and the DC motors need to shaved off, so that the we can attach them firmly, without needing glue and remove them after, if needed.
