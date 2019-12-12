@@ -9,15 +9,15 @@ warris-sohi.github.io/SmartTennisBallMachine
 
 [Quick Links](https://github.com/Warris-Sohi/SmartTennisBallMachine#Quick-Links) 
 
-[Testing the acquired materials](https://github.com/Warris-Sohi/SmartTennisBallMachine#--Step-1-Test-the-acquired-materials)
+[Testing the acquired materials](https://github.com/Warris-Sohi/SmartTennisBallMachine#Step-1-Test-the-acquired-materials)
 
-[Testing the breadboard prototype.](https://github.com/Warris-Sohi/SmartTennisBallMachine#--Step-2-Testing-the-breadboard-prototype)
+[Testing the breadboard prototype.](https://github.com/Warris-Sohi/SmartTennisBallMachine#Step-2-Testing-the-breadboard-prototype)
 
-[Build a PCB prototype](https://github.com/Warris-Sohi/SmartTennisBallMachine#--Step-3-Build-a-PCB-prototype)
+[Build a PCB prototype](https://github.com/Warris-Sohi/SmartTennisBallMachine#Step-3-Build-a-PCB-prototype)
 
-[Lasercut case and Assembling](https://github.com/Warris-Sohi/SmartTennisBallMachine#--Step-4-Project-Enclosure)
+[Lasercut case and Assembling](https://github.com/Warris-Sohi/SmartTennisBallMachine#Step-4-Project-Enclosure)
 
-[Production Testing](https://github.com/HusnalK/Resistor-Value-Recognizer-RVR#Production-Testing)
+[Production Testing](https://github.com/Warris-Sohi/SmartTennisBallMachine#Step-4-Project-Enclosure)
 
 [Conclusion](https://github.com/HusnalK/Resistor-Value-Recognizer-RVR#Conclusion)
 ## Introduction
@@ -64,3 +64,7 @@ warris-sohi.github.io/SmartTennisBallMachine
 ### Step 4 Project Enclosure
 ##### The provided .cdr file consists of a case for the Raspberry Pi and mounted PCB and a holder for the DC motors to hold them at required distance so that a ping pong ball can be fit in them and launched. 
 ##### After enclosure pieces are laser-cut, some of affixes for the Pi case and the DC motors need to shaved off, so that the we can attach them firmly, without needing glue and remove them after, if needed.
+## Production Testing
+##### When mass-producing this project, steps like making the breadboarding isn't necessary for all the units to be made. The components used are mass produced so, testing individual components can be skipped. This makes production easier and faster. Then you can go straight to testing the connections for th PCB.
+## Conclusion 
+##### Hence, This project can be reproduced massively.  This is a fairly basic project and can be adjusted to other developer's needs.
