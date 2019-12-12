@@ -23,6 +23,7 @@ warris-sohi.github.io/SmartTennisBallMachine
 ## Introduction
 ![System Diagram](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Images/System%20Diagram.jpg)
 ##### These instructions are provided to build a launcher for a smart Ping Pong Machine that connects to an app using Firebase to control the aim and speed of ball launched to play. The machine uses a Raspberry 4 Model B as it's development platform, and Sparkfun TB6621FNG driver to control the speed of the 2 DC motors to launch the ball.
+![Final Product](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Images/IMG_Enclosure.jpg)
 ##### These build instructions will show you how to program your Pi and build a PCB to mount the Driver and the motors. It also gives you the schemetics to build a laser-cut case to protect the Pi, the PCB and a holder for the DC motors for that can be attached to a base that is connected another component that uses a Servo  Motor to aim the ball horizontally.
 ## Materials Required
 ##### 1 - Raspberry Pi 4 Model B Kit
