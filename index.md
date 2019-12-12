@@ -10,7 +10,7 @@ Gurwarris's Team.
 ## December 12, 2019
 I have posted my complete [Build Instructions](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/README.md)
 My final Product, my PCB has been tested, my closure fits and accomodates my PCB with mounted driver.
-![My Final Product] (https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Images/IMG_Enclosure.jpg)
+![My Final Product](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Images/IMG_Enclosure.jpg)
 ## November 28, 2019
 [My presentation](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Documentation/Presentation%20Ping%20Pong%20Machine.pptx)
 I have tried laser cutting my enclosure, but it is not upto scale, with my design.
