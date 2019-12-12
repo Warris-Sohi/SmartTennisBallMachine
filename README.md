@@ -1,5 +1,29 @@
 # SmartTennisBallMachine
 warris-sohi.github.io/SmartTennisBallMachine
+## Table of Contents
+[Introduction](https://github.com/Warris-Sohi/SmartTennisBallMachine#Introduction)
+
+[Build Materials](https://github.com/Warris-Sohi/SmartTennisBallMachine#Materials-Required)
+
+[Time Commitment](https://github.com/Warris-Sohi/SmartTennisBallMachine#Time-Commitment)
+
+[Quick Links](https://github.com/Warris-Sohi/SmartTennisBallMachine#Quick-Links) 
+
+[Testing the acquired materials](https://github.com/Warris-Sohi/SmartTennisBallMachine#--Step-1-Test-the-acquired-materials)
+
+[Testing the breadboard prototype.](https://github.com/Warris-Sohi/SmartTennisBallMachine#--Step-2-Testing-the-breadboard-prototype)
+
+[Build a PCB prototype](https://github.com/Warris-Sohi/SmartTennisBallMachine#--Step-3-Build-a-PCB-prototype)
+
+[Lasercut case and Assembling](https://github.com/Warris-Sohi/SmartTennisBallMachine#--Step-4-Project-Enclosure)
+
+[Production Testing](https://github.com/HusnalK/Resistor-Value-Recognizer-RVR#Production-Testing)
+
+[Conclusion](https://github.com/HusnalK/Resistor-Value-Recognizer-RVR#Conclusion)
+## Introduction
+![System Diagram](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Images/System%20Diagram.jpg)
+##### These instructions are provided to build a launcher for a smart Ping Pong Machine that connects to an app using Firebase to control the aim and speed of ball launched to play. The machine uses a Raspberry 4 Model B as it's development platform, and Sparkfun TB6621FNG driver to control the speed of the 2 DC motors to launch the ball.
+##### These build instructions will show you how to program your Pi and build a PCB to mount the Driver and the motors. It also gives you the schemetics to build a laser-cut case to protect the Pi, the PCB and a holder for the DC motors for that can be attached to a base that is connected another component that uses a Servo  Motor to aim the ball horizontally.
 ## Materials Required
 ##### 1 - Raspberry Pi 4 Model B Kit
 ##### 1 - TB6621FNG Dual Motor Driver
@@ -7,6 +31,16 @@ warris-sohi.github.io/SmartTennisBallMachine
 ##### 1 - 6V - 9V Power Supply 
 ##### 2 - 1X20 Female Socket Headers, 1X8 Female Socket Headers
 ##### 3 - 1X2 Female Socket Headers
+## Time Commitment 
+##### Materials Testing - 40 Minutes
+##### Building BreadBoard prototype - 30 Minutes
+##### PCB Etching and Cutting - 60 Minutes
+##### PCB Soldering - 45 Minutes
+##### PCB Pwer-Up - 15 Minutes
+##### Laser Cutting Case - 20 Minutes
+##### Case and PCB Assembly - 20 Minutes
+##### Final Prototype Assembly - 30 Minutes
+##### Total Time Commitment - 4 Hours 20 Minutes
 ##  Quick Links
 ##### [Firmware Code](https://github.com/Warris-Sohi/SmartTennisBallMachine/blob/master/Firmware/tbfng6621.py) 
 ##### [Fritzing File](https://github.com/Warris-Sohi/SmartTennisBallMachine/raw/master/Electronics/DualMotorDriver.fzz)
