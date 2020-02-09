@@ -3,6 +3,7 @@
  # DC Motor Control with tb6612fng dual h-bridge motor controller
 ##
 from time import sleep      # Import sleep from time
+from datetime import datetime
 import RPi.GPIO as GPIO     # Import Standard GPIO Module
 
 GPIO.setmode(GPIO.BOARD)      # Set GPIO mode to BCM
@@ -12,35 +13,46 @@ GPIO.setwarnings(False);
 pwmFreq = 100
 
 # Setup Pins for motor controller
-GPIO.setup(12, GPIO.OUT)    # PWMA
-GPIO.setup(18, GPIO.OUT)    # AIN2
-GPIO.setup(16, GPIO.OUT)    # AIN1
-GPIO.setup(22, GPIO.OUT)    # STBY
-GPIO.setup(15, GPIO.OUT)    # BIN1
-GPIO.setup(13, GPIO.OUT)    # BIN2
-GPIO.setup(35, GPIO.OUT)    # PWMB
+GPIO.setup(7, GPIO.OUT)		# Solenoidcntrl
+GPIO.setup(12, GPIO.OUT)	# ServoPWM
+GPIO.setup(36, GPIO.OUT)	# AIN2
+GPIO.setup(32, GPIO.OUT)   	# AIN1
+GPIO.setup(37, GPIO.OUT)    	# STBY
+GPIO.setup(31, GPIO.OUT)    	# BIN1
+GPIO.setup(33, GPIO.OUT)    	# BIN2
+GPIO.setup(40, GPIO.OUT)    	# PWMA
+GPIO.setup(38, GPIO.OUT)    	# PWMB
 
-pwma = GPIO.PWM(12, pwmFreq)    # pin 18 to PWM  
-pwmb = GPIO.PWM(35, pwmFreq)    # pin 13 to PWM
+pwmstp = GPIO.PWM(12, pwmFreq)    # pin 18 to PWM  
+pwmb = GPIO.PWM(38, pwmFreq)    # pin 13 to PWM
+pwma = GPIO.PWM(40, pwmFreq) 
 pwma.start(100)
 pwmb.start(100)
+pwmstp.start(100)
+
 
 ## Functions
 ###############################################################################
-def forward(spd):
+def turnAngle():
+	now = int(round(sleep.time() * 1000))
+	stpin=now%14
+	pwmstp.ChangeDutyCycle(stpin+43)
+
+
+def shoot(spd):
     runMotor(0, spd, 1)
     runMotor(1, spd, 0)
 
-def turnLeft(spd1,spd2):
+def topshot(spd1,spd2):
     runMotor(0, spd1, 1)
     runMotor(1, spd2, 0)
 
-def turnRight(spd1,spd2):
+def backshot(spd1,spd2):
     runMotor(0, spd1, 1)
     runMotor(1, spd2, 0)
 
 def runMotor(motor, spd, direction):
-    GPIO.output(22, GPIO.HIGH);
+    GPIO.output(37, GPIO.HIGH);
     in1 = GPIO.HIGH
     in2 = GPIO.LOW
 
@@ -49,36 +61,45 @@ def runMotor(motor, spd, direction):
         in2 = GPIO.HIGH
 
     if(motor == 0):
-        GPIO.output(16, in1)
-        GPIO.output(18, in2)
+        GPIO.output(32, in1)
+        GPIO.output(36, in2)
         pwma.ChangeDutyCycle(spd)
     elif(motor == 1):
-        GPIO.output(15, in1)
-        GPIO.output(13, in2)
+        GPIO.output(31, in1)
+        GPIO.output(33, in2)
         pwmb.ChangeDutyCycle(spd)
 
 
+def interval()
+	GPIO.output(7,GPIO.HIGH)
+	sleep(1)
+	GPIO.output(7,GPIO.LOW)
+
 def motorStop():
-    GPIO.output(22, GPIO.LOW)
+    GPIO.output(37, GPIO.LOW)
 
 ## Main
 ##############################################################################
 def main(args=None):
     try:
         while True:
-            forward(50)     # run motor forward
-            sleep(10)        # ... for 2 seconds
+	    interval()
+            shoot(50)     # run motor forward
+            sleep(1)        # ... for 2 seconds
             motorStop()     # ... stop motor
-            sleep(.25)      # delay between motor runs
+            turnAngle()
+	    interval()      # delay between motor runs
 
-            turnLeft(50,30)    # turn Left
-            sleep(2)        # ... for 2 seconds
+            topshot(50,30)    # turn Left
+            sleep(1)        # ... for 2 seconds
             motorStop()     # ... stop motors
-            sleep(.25)      # delay between motor runs
+            turnAngle()
+	    interval()      # delay between motor runs
 
-            turnRight(30,50)   # turn Right
-            sleep(2)        # ... for 2 seconds
+            backshot(30,50)   # turn Right
+            sleep(1)        # ... for 2 seconds
             motorStop()     # ... stop motors
+	    turnAngle()
             sleep(2)        # delay between motor runs
     except KeyboardInterrupt:
         pass
