@@ -10,34 +10,39 @@ GPIO.setmode(GPIO.BOARD)      # Set GPIO mode to BCM
 GPIO.setwarnings(False);
 
 # PWM Frequency
-pwmFreq = 100
-
+DCpwmFreq = 100
+sepwmFreq =  
 # Setup Pins for motor controller
-GPIO.setup(7, GPIO.OUT)		# Solenoidcntrl
-GPIO.setup(12, GPIO.OUT)	# ServoPWM
-GPIO.setup(36, GPIO.OUT)	# AIN2
-GPIO.setup(32, GPIO.OUT)   	# AIN1
-GPIO.setup(37, GPIO.OUT)    	# STBY
-GPIO.setup(31, GPIO.OUT)    	# BIN1
-GPIO.setup(33, GPIO.OUT)    	# BIN2
-GPIO.setup(40, GPIO.OUT)    	# PWMA
-GPIO.setup(38, GPIO.OUT)    	# PWMB
+GPIO.setup(7, GPIO.OUT)     # Solenoidcntrl
+GPIO.setup(12, GPIO.OUT)    # ServoPWM
+GPIO.setup(36, GPIO.OUT)    # AIN2
+GPIO.setup(32, GPIO.OUT)    # AIN1
+GPIO.setup(37, GPIO.OUT)        # STBY
+GPIO.setup(31, GPIO.OUT)        # BIN1
+GPIO.setup(33, GPIO.OUT)        # BIN2
+GPIO.setup(40, GPIO.OUT)        # PWMA
+GPIO.setup(38, GPIO.OUT)        # PWMB
 
-pwmstp = GPIO.PWM(12, pwmFreq)    # pin 18 to PWM  
-pwmb = GPIO.PWM(38, pwmFreq)    # pin 13 to PWM
-pwma = GPIO.PWM(40, pwmFreq) 
-pwma.start(100)
-pwmb.start(100)
-pwmstp.start(100)
+pwmstp = GPIO.PWM(12, sepwmFreq)    # pin 12 to PWM  
+pwmb = GPIO.PWM(38, DCpwmFreq)    # pin 38 to PWM
+pwma = GPIO.PWM(40, DCpwmFreq)    # pin 40 to PWM
+pwma.start(40)
+pwmb.start(40)
+pwmstp.start(7)
 
 
 ## Functions
 ###############################################################################
 def turnAngle():
-	now = int(round(sleep.time() * 1000))
-	stpin=now%14
-	pwmstp.ChangeDutyCycle(stpin+43)
-
+    pwmstp.ChangeDutyCycle(3)
+    sleep(2)
+    pwmstp.ChangeDutyCycle(4)
+    sleep(2)
+    pwmstp.ChangeDutyCycle(5)
+    sleep(2)
+    pwmstp.ChangeDutyCycle(6)
+    sleep(2)
+    pwmstp.ChangeDutyCycle()
 
 def shoot(spd):
     runMotor(0, spd, 1)
@@ -70,10 +75,10 @@ def runMotor(motor, spd, direction):
         pwmb.ChangeDutyCycle(spd)
 
 
-def interval()
-	GPIO.output(7,GPIO.HIGH)
-	sleep(1)
-	GPIO.output(7,GPIO.LOW)
+def interval():
+    GPIO.output(7,GPIO.HIGH)
+    sleep(1)
+    GPIO.output(7,GPIO.LOW)
 
 def motorStop():
     GPIO.output(37, GPIO.LOW)
@@ -83,23 +88,23 @@ def motorStop():
 def main(args=None):
     try:
         while True:
-	    interval()
+            interval()
             shoot(50)     # run motor forward
             sleep(1)        # ... for 2 seconds
             motorStop()     # ... stop motor
             turnAngle()
-	    interval()      # delay between motor runs
+            interval()      # delay between motor runs
 
             topshot(50,30)    # turn Left
             sleep(1)        # ... for 2 seconds
             motorStop()     # ... stop motors
             turnAngle()
-	    interval()      # delay between motor runs
+            interval()      # delay between motor runs
 
             backshot(30,50)   # turn Right
             sleep(1)        # ... for 2 seconds
             motorStop()     # ... stop motors
-	    turnAngle()
+            turnAngle()
             sleep(2)        # delay between motor runs
     except KeyboardInterrupt:
         pass
