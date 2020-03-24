@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <!--      <EditText
+            android:layout_marginTop="275dp"
+            android:hint="@string/first_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:importantForAutofill="no" />
+        <EditText
+            android:layout_marginTop="325dp"
+            android:hint="@string/last_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:importantForAutofill="no" />-->
+
+        <TextView
+            android:id="@+id/textViewname"
+            android:layout_width="231dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="44dp"
+            android:shadowColor="@android:color/darker_gray"
+            android:text="@string/john_doe"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginBottom="44dp"/>
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/MNumn"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginBottom="44dp"
+            android:text="@string/machine_serial_number"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="163dp"
+            android:id="@+id/profileid"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="433dp"
+            android:layout_marginEnd="290dp"
+            android:layout_marginBottom="44dp"
+            android:text="@string/MNumn"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="228dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="575dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="200dp"
+            android:background="@drawable/loginbutton"
+
+            android:text="@string/submit"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
