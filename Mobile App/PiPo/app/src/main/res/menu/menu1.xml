@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <menu />
     <item
         android:id="@+id/Profile"
-        android:title="@string/menu_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/title_activity_profile"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/Settings"
+        android:enabled="true"
+        android:title="@string/title_activity_setting"
+        android:visible="true"
+         />
 
-        />
-    <item android:id="@+id/Settings"
-        android:title="@string/title_activity_setting" />
-    <item android:id="@+id/SignOut"
+    <item
+        android:id="@+id/SignOut"
+        android:icon="@drawable/ic_lock_black_24dp"
         android:title="@string/sign_out" />
 </menu>

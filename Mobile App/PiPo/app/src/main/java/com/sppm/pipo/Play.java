@@ -10,20 +10,25 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.SeekBar;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Play extends AppCompatActivity {
-    String difficulty;
+    String difficulty="easy";
     int LaunchAngle;
     int TimeInterval;
+    RadioButton diff;
+    RadioGroup radioGroup;
     private SeekBar LAseekBar;
     private SeekBar IDseekBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
+        radioGroup = (RadioGroup)findViewById(R.id.RadioGroup);
         LAseekBar = (SeekBar) findViewById(R.id.LA);
         IDseekBar = (SeekBar) findViewById(R.id.ID);
         LAseekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -62,36 +67,27 @@ public class Play extends AppCompatActivity {
         final Button button = findViewById(R.id.nextButton);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                int selectedId = radioGroup.getCheckedRadioButtonId();
+                diff=(RadioButton) findViewById(selectedId);
+                if(selectedId==-1){
+                    Toast.makeText(Play.this,"Nothing selected for difficulty", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    difficulty=diff.getText().toString();
+                }
                 TimeInterval= IDseekBar.getProgress();
                 LaunchAngle= LAseekBar.getProgress();
+
                 Intent intent = new Intent(Play.this, Start.class);
                 intent.putExtra("difficulty",difficulty);
                 intent.putExtra("TI",TimeInterval);
                 intent.putExtra("LA",LaunchAngle);
+
                 startActivity(intent);
             }
         });
     }
-    public void onRadioButtonClicked(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
 
-        // Check which radio button was clicked
-        switch(view.getId()) {
-            case R.id.easy:
-                if (checked)
-                    difficulty="easy";
-                    break;
-            case R.id.medium:
-                if (checked)
-                    difficulty="medium";
-                    break;
-            case R.id.hard:
-                if (checked)
-                    difficulty="hard";
-                    break;
-        }
-    }
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu1, menu);
